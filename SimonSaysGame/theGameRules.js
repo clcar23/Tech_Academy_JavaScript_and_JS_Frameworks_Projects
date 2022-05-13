@@ -11,7 +11,9 @@ $(function() {
     var flashNo;
     var clickedNo;
     
-    var setupLightSequence = function() {
+    var setupLightSequence = function() { 
+        colors.fadeOut("slow");
+        colors.fadeIn("slow");
         var randomNum = Math.floor(Math.random() * 4);
         gameSequence[level-1] = randomNum;
         showLightSequence();
